@@ -1,0 +1,188 @@
+body {
+	background-color:#000;
+}
+
+body.dark {
+    background-color:#4e4e4e;
+}
+
+body .wrappercontent {
+       position: relative;
+    width: 84%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    min-height: 850px;
+    padding: 15px;
+    background-color: #dadada;
+}
+
+body.dark .wrappercontent {
+      background-color: #f5f5f5;
+    }
+
+    #message {
+        padding:8px;
+        background-color:#b8b8b8;
+        color:white;
+    }
+
+    .loader {
+    	display:block;
+    	text-align:center;
+    	height:250px;
+    	width:250px;
+    	margin:auto;
+    	margin-top:80px;
+    	background:rgb(51,51,51);
+    	border-radius:100%;
+    	padding:30px;
+    	overflow:hidden;
+    }
+
+.loader > img  {
+    	text-align:center;
+    }
+
+/** classe utlitaires */ 
+
+
+.wrappercontent .btn.btn-info .material-icons {
+    vertical-align: -2px;
+}
+
+.hide {
+    display:none;
+}
+.fl-r {
+	float:right;
+}
+
+.ta-center {
+	text-align:center;
+}
+/** LINE OF PROJECT **/ 
+
+
+.LOP {
+    display: block;
+    padding: 14px;
+    margin:10px 5px;
+    margin-left: 10px;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+.LOP-title {
+	display:inline-block;
+	width:20%;
+	font-size:18px;
+	margin-left:10px;
+}
+
+.LOP-desc {
+	display:inline-block;
+	width:25%;
+	font-size:14px;
+	margin-left:10px;
+}
+
+.LOP-state {
+	display:inline-block;
+	width:40%;
+	padding:10px;
+	font-size:12px;
+	margin-left:10px;
+}
+
+.LOP-state .badge{
+	width:250px;
+    padding:4px;
+    border-radius:4px;
+    text-transform: uppercase;
+    background-color:white;
+	}
+
+
+/*/////////////////// BUTTONS //////////////////////*/
+
+.btn-large {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.btn-large.active {
+    border:1px solid orange ;
+    color:#4a4a4a!important;
+    }
+
+.btn-large.active img.icon{
+    opacity:0;
+}
+
+.btn-large img.icon {
+    width:20px;
+    vertical-align: top;
+    transition:0.3s opacity ease-out;
+    }
+
+button.controls {
+    transition : opacity 0.5s linear;
+}
+
+.changelocked .LOP-state  button.controls,
+.changelocked  button.controls {
+    opacity:0;
+}
+
+.LOP-state  button {
+    border: 0;
+    font-weight: bolder;
+}
+	/* Animation switch */ 
+
+	.Topfade {
+		animation:0.8s fromtop ease-out;
+	}
+
+	.Topfade-dl {
+		animation:0.4s fromtop-dl ease-out;	
+	}
+
+
+	/** ANIMATIONS **/
+
+	    @keyframes fromtop {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+    }
+
+
+	    @keyframes fromtop-dl {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            35% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+    }
